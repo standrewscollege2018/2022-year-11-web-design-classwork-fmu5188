@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-column-gap: 20px;
+}
+
+.card {
+	border: 1px solid rgb(12, 34, 56);
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.card > img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Import and set up fonts */
+@font-face {
+  font-family: HelloAudrey;
+  src: url(fonts/HelloAudrey.ttf);
+}
+
+body {
+  background-color: rgb(8, 10, 50);
+  font-family: Calibri, Arial, Verdana;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  color: rgb(10, 200, 0);
+  font-family: HelloAudrey,Geneva, Times;
+  margin-bottom: 10px;
+}
+
+h2 {
+  /* margin: top right bottom left */
+  margin: 20px 0px 5px 0px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* Captions for photos */
+
+/* Classes are rules that can be applied to any tag.
+They must start with a full-stop */
+.caption {
+  color: rgba(214, 214, 214, 0.5);
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+
+/* Format links */
+/* Default link status */
+a:link {
+  color: green;
+  text-decoration: none;
+}
+/* Visited links */
+a:visited {
+  color: rgb(210, 120, 0);
+}
+/* Hovering over a link */
+a:hover {
+  text-decoration: underline;
+}
